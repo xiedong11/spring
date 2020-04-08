@@ -5,9 +5,14 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-<!--    使用spring创建对象-->
-    <bean id="hello" class="com.zhuandian.Hello">
+    <!--    使用spring创建对象-->
+    <bean id="hello" class="com.zhuandian.dao.Hello">
         <property name="name" value="test"/>
         <property name="age" value="12"/>
+    </bean>
+
+    <bean id="user" class="com.zhuandian.dao.User">
+<!--        相当于赋值给user一个初始化的值，也可以在java代码里动态设置-->
+<!--        <property name="hello" ref="hello"/>-->
     </bean>
 </beans>

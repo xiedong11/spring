@@ -1,4 +1,4 @@
-package com.zhuandian;
+package com.zhuandian.dao;
 
 public class Hello {
     private String name;

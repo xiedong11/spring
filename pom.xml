@@ -4,10 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sbl</groupId>
+    <groupId>com.zhuandian</groupId>
     <artifactId>spring01</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>spring-ioc</module>
+    </modules>
+    <packaging>pom</packaging>
 
 
     <dependencies>

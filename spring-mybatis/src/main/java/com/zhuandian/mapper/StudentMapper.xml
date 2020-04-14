@@ -5,6 +5,12 @@
 <mapper namespace="com.zhuandian.mapper.StudentMapper">
 
     <select id="findStudentById" parameterType="int" resultType="student">
-        select * from student where  id=#{id};
+        select * from student where  id=#{id}
     </select>
+
+    <delete id="deleteStudentById" parameterType="int">
+        delete from student where id=#{id}
+    </delete>
+
+
 </mapper>

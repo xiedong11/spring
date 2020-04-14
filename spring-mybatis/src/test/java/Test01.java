@@ -10,9 +10,12 @@ public class Test01 {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         StudentServiceImpl studentMapper = context.getBean("StudentServiceImpl", StudentServiceImpl.class);
-        Student student = studentMapper.findStudentById(14);
 
+
+        Student student = studentMapper.findStudentById(14);
         System.out.println(student.getUsername());
+
+        studentMapper.deleteStudentById(14);
     }
 
 }

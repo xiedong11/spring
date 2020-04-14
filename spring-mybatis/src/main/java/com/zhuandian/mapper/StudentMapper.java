@@ -3,5 +3,7 @@ package com.zhuandian.mapper;
 import com.zhuandian.pojo.Student;
 
 public interface StudentMapper {
-    public Student findStudentById(int id);
+    Student findStudentById(int id);
+
+    void deleteStudentById(int id);
 }

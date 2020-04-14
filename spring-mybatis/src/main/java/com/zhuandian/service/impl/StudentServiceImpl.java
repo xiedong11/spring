@@ -12,7 +12,16 @@ public class StudentServiceImpl implements StudentService {
     }
 
     public Student findStudentById(int id) {
-        System.out.println(id+"——----------");
+        System.out.println(id + "——----------");
         return studentMapper.findStudentById(id);
+    }
+
+
+    /**
+     * 删除指定id的学生
+     * @param id
+     */
+    public void deleteStudentById(int id) {
+        studentMapper.deleteStudentById(id);
     }
 }

@@ -24,4 +24,12 @@ public class StudentServiceImpl implements StudentService {
     public void deleteStudentById(int id) {
         studentMapper.deleteStudentById(id);
     }
+
+    /**
+     * 插入一个学生
+     * @param student
+     */
+    public void insertStudentToDB(Student student) {
+        studentMapper.insertStudentToDB(student);
+    }
 }

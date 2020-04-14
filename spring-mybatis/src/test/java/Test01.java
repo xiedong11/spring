@@ -7,15 +7,30 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test01 {
 
 
+    public Test01() {
+    }
+
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         StudentServiceImpl studentMapper = context.getBean("StudentServiceImpl", StudentServiceImpl.class);
 
 
-        Student student = studentMapper.findStudentById(14);
+        //查询
+        Student student = studentMapper.findStudentById(1);
         System.out.println(student.getUsername());
 
-        studentMapper.deleteStudentById(14);
+        //删除
+//        studentMapper.deleteStudentById(14);
+
+
+        //增加
+
+        Student student1 = new Student();
+        student1.setId(11);
+        student1.setUsername("xiaoming");
+        student1.setPassword("*****");
+
+        studentMapper.insertStudentToDB(student1);
     }
 
 }

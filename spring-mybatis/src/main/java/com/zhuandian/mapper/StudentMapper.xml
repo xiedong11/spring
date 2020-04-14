@@ -12,5 +12,8 @@
         delete from student where id=#{id}
     </delete>
 
+    <insert id="insertStudentToDB" parameterType="student">
+        insert into student (id,username ,password) value (#{id},#{username},#{password})
+    </insert>
 
 </mapper>

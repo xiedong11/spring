@@ -8,9 +8,9 @@
          http://www.springframework.org/schema/tx
          http://www.springframework.org/schema/tx/spring-tx-3.2.xsd">
 
-    <import resource="classpath:spring-service.xml"/>
-
-    <import resource="classpath:db-config.xml"/>
+    <bean id="StudentServiceImpl" class="com.zhuandian.service.impl.StudentServiceImpl">
+        <property name="studentMapper" ref="studentMapper"/>
+    </bean>
 
 
 </beans>

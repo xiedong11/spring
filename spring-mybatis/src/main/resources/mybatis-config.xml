@@ -5,11 +5,11 @@
 <configuration>
     <!-- 类型别名 -->
     <typeAliases>
-        <typeAlias type="com.zhuandian.pojo.Student" alias="stuent"/>
+        <typeAlias type="com.zhuandian.pojo.Student" alias="student"/>
     </typeAliases>
 
     <mappers>
-        <mapper resource="StudentMapper.xml"/>
+        <mapper class="com.zhuandian.mapper.StudentMapper"/>
     </mappers>
 </configuration>
 

@@ -8,4 +8,6 @@ public interface StudentMapper {
     void deleteStudentById(int id);
 
     void insertStudentToDB(Student student);
+
+    void updateStudent(Student student);
 }

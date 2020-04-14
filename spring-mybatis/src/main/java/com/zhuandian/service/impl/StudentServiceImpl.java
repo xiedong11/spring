@@ -12,13 +12,13 @@ public class StudentServiceImpl implements StudentService {
     }
 
     public Student findStudentById(int id) {
-        System.out.println(id + "——----------");
         return studentMapper.findStudentById(id);
     }
 
 
     /**
      * 删除指定id的学生
+     *
      * @param id
      */
     public void deleteStudentById(int id) {
@@ -27,9 +27,20 @@ public class StudentServiceImpl implements StudentService {
 
     /**
      * 插入一个学生
+     *
      * @param student
      */
     public void insertStudentToDB(Student student) {
         studentMapper.insertStudentToDB(student);
+    }
+
+    /**
+     * 修改数据
+     *
+     * @param student
+     * @return
+     */
+    public void updateStudent(Student student) {
+        studentMapper.updateStudent(student);
     }
 }

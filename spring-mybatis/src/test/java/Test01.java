@@ -19,12 +19,17 @@ public class Test01 {
         Student student = studentMapper.findStudentById(1);
         System.out.println(student.getUsername());
 
+
+        //修改
+        System.out.println(student.getUsername()+" 修改前。。。。。");
+        student.setUsername("Tom");
+        studentMapper.updateStudent(student);
+        System.out.println(studentMapper.findStudentById(1).getUsername()+" 修改后。。。。。");
+
         //删除
 //        studentMapper.deleteStudentById(14);
 
-
         //增加
-
         Student student1 = new Student();
         student1.setId(11);
         student1.setUsername("xiaoming");
